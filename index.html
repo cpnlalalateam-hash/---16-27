@@ -100,7 +100,7 @@ const DOG_TYPES = {
 function determineCode() {
 const answers = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 };
 let allAnsweredCount = 0;
-for(let i = 1; i <= 7; i++) {
+for(let i=1;i<=7; i++){
 const checked = document.querySelector(`input[name="q${i}"]:checked`);
 if (checked) {
 answers[checked.value]++;
@@ -120,7 +120,7 @@ return axis1 + axis2 + axis3 + axis4;
 
 function diagnose() {
 const code = determineCode();
-if (code === null) {
+if(code===nu11){
 return;
 }
 const userName = document.getElementById('user-name').value || 'あなた';
@@ -181,4 +181,5 @@ resetQuiz();
 });
 </script>
 </body>
+
 </html>
